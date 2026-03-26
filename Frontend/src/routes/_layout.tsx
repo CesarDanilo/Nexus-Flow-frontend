@@ -7,9 +7,9 @@ export const Route = createFileRoute('/_layout')({
 
 function LayoutComponent() {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen w-full">
       <Sidebar /> {/* Sua sidebar fixa */}
-      <main className="flex-1 overflow-y-auto p-4">
+      <main className="flex-1 overflow-y-auto w-full">
         <Outlet /> {/* Aqui serão renderizadas as páginas da pasta _layout/ */}
       </main>
     </div>
